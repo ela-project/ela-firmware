@@ -1,0 +1,4 @@
+[submodule "lib/ela-protocol-lib"]
+	path = lib/ela-protocol-lib
+	url = git@github.com:ela-project/ela-protocol-lib.git
+	branch = master
