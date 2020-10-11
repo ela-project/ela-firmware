@@ -82,9 +82,8 @@ int Hardware::data_avalible(void) {  // Data in RX serial buffer
  */
 void Hardware::init(void) {
   cube_main_init();
-  __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, 3600U);
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
-  //__HAL_TIM_ENABLE(&htim4);
+  HAL_TIM_PWM_Start(&htim17, TIM_CHANNEL_1);
   m_sample_buffer_start = 0;
   m_sample_buffer_end = 0;
   m_sample_buffer_count = 0;
